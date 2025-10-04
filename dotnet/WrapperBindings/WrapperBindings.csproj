@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <!-- Copy native binaries next to managed output for dev/debug -->
+  <ItemGroup>
+    <None Include="../../native/install/bin/wrapper.dll"
+          Condition="'$(OS)'=='Windows_NT'"
+          CopyToOutputDirectory="PreserveNewest" />
+    <None Include="../../native/install/lib/libwrapper.dylib"
+          Condition="'$(OS)'!='Windows_NT'"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>
