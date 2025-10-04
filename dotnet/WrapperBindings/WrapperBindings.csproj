@@ -7,7 +7,7 @@
 
   <!-- Copy native binaries next to managed output for dev/debug -->
   <ItemGroup>
-    <None Include="../../native/install/bin/wrapper.dll"
+    <None Include="../../native/out/build/x64-Debug/hump.dll"
           Condition="'$(OS)'=='Windows_NT'"
           CopyToOutputDirectory="PreserveNewest" />
     <None Include="../../native/install/lib/libwrapper.dylib"

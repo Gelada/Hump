@@ -4,11 +4,11 @@ using System.Runtime.InteropServices;
 internal static class Native
 {
 #if WINDOWS
-    private const string LIB = "wrapper.dll";
+    private const string LIB = "hump.dll";
 #elif OSX
-    private const string LIB = "libwrapper.dylib";
+    private const string LIB = "hump.dylib";
 #else
-    private const string LIB = "libwrapper.so";
+    private const string LIB = "hump.so";
 #endif
 
     [DllImport(LIB, EntryPoint = "ocv_gaussian_blur",
