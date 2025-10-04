@@ -1,6 +1,7 @@
-.vs/
 !.vs/CMakeWorkspaceSettings.json
+.vs/
 .vscode/
 out/
 native/out
+!native/build/.empty
 native/build
