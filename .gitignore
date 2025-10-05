@@ -5,6 +5,6 @@ out/
 native/out
 !native/build/.empty
 native/build
-dotnet/WrapperBindings/bin/
-dotnet/WrapperBindings/obj/Debug
-dotnet/WrapperBindings/obj/Release
+!dotnet/HumpSharp/obj/project.assets.json
+dotnet/HumpSharp/obj
+dotnet/HumpSharp/bin
